@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="*"
+        android:layout_marginTop="60dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select a skill level:"
+                android:id="@+id/skillTextHeader"
+                android:textColor="@android:color/black"
+                android:textSize="34dp"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/button1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textSize="30dp"
+                android:background="@drawable/button_special"
+                android:textColor="@color/custom_button_text_color"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/easyLevelText"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:typeface="normal"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text=" - Easy - computer has only a\n 20% chance of remembering"
+                android:width="300dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/button2"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textSize="30dp"
+                android:background="@drawable/button_special"
+                android:textColor="@color/custom_button_text_color"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/mediumLevelText"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:typeface="normal"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text=" - Medium - computer has a\n 40% chance of remembering"
+                android:width="300dp"
+                android:paddingBottom="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/button3"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textSize="30dp"
+                android:background="@drawable/button_special"
+                android:textColor="@color/custom_button_text_color"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/hardLevelText"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:typeface="normal"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text=" - Hard - computer has a 60% chance of remembering"
+                android:width="300dp"
+                android:paddingBottom="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/button4"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textSize="30dp"
+                android:background="@drawable/button_special"
+                android:textColor="@color/custom_button_text_color"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/challengingLevelText"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:typeface="normal"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text=" - Challenging - computer has\n an 80% chance of remembering"
+                android:width="300dp"
+                android:paddingBottom="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/button5"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textSize="30dp"
+                android:background="@drawable/button_special"
+                android:textColor="@color/custom_button_text_color"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/expertLevelTExt"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:typeface="normal"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text=" - Expert - computer has\n a perfect memory"
+                android:width="300dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFAAAAAA">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        tools:ignore="UselessParent" >
+
+        <TableLayout
+            android:id="@+id/tablelayout_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/tablerow_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/textview_dialog_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a8a8a8"
+                    android:padding="10sp"
+                    android:gravity="center_vertical"
+                    android:textColor="#643c3a"
+                    android:textSize="22dp"
+                    android:contextClickable="false"
+                    android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+
+
+        <View
+            android:id="@+id/viewline_dialog"
+            android:layout_below="@+id/tablelayout_dialog_title"
+            android:layout_width = "wrap_content"
+            android:layout_height="0.25dip"
+            android:background="#ffffff"
+            android:layout_centerVertical ="true" />
+
+        <TextView
+            android:id="@+id/textview_dialog_text"
+            android:layout_below="@+id/viewline_dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:background="#a8a8a8"
+            android:textColor="#643c3a"
+            android:textSize="18dp"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/viewline1_dialog"
+            android:layout_width = "wrap_content"
+            android:layout_height="0.5dip"
+            android:background="#ffffff"
+            android:layout_centerVertical ="true"
+            android:layout_below="@+id/textview_dialog_text"/>
+
+        <TableLayout
+            android:id="@+id/tablelayout_dialog_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stretchColumns="*"
+            android:layout_below="@+id/viewline1_dialog"
+            android:background="#a8a8a8" >
+
+            <TableRow
+                android:id="@+id/tablerow_dialog_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent" >
+
+                <Button
+                    android:id="@+id/button_dialog_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:paddingTop="5sp"
+                    android:paddingBottom="5sp"
+                    android:background="@drawable/button_special"
+                    android:text="@string/play_again"
+                    android:textColor="@color/custom_button_text_color"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/button_dialog_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:paddingTop="5sp"
+                    android:paddingBottom="5sp"
+                    android:background="@drawable/button_special"
+                    android:text="@string/cancel"
+                    android:textColor="@color/custom_button_text_color"
+                    android:textSize="16dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
